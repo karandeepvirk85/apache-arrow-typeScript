@@ -1,0 +1,24 @@
+{
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.1",
+    "typescript": "~4.7.0"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "dependencies": {
+    "apache-arrow": "^9.0.0",
+    "data.js": "^0.12.11",
+    "enum": "^3.0.4",
+    "schema.js": "^0.1.2",
+    "type.js": "^0.0.1",
+    "vector.js": "^2.0.0"
+  }
+}
